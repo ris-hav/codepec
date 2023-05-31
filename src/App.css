@@ -1,38 +1,31 @@
-.App {
-  text-align: center;
+.CodeMirror {
+  height: 340px !important;
+  color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.CodeMirror-gutters {
+  background: #1d1e22 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.CodeMirror-scroll {
+  width: 100%;
+  background: #1d1e22;
+  position: absolute;
+  /* overflow: hidden !important; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cm-s-material.CodeMirror {
+
+  background-color: red;
+  
 }
 
-.App-link {
-  color: #61dafb;
-}
+/* .controlled-editor{
+  height: 20px
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+} */
+
+/* copy code text */
+/* p{
+  padding-left: 130px;
+} */
