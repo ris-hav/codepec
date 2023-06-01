@@ -3,10 +3,10 @@ import { useState, useEffect, useContext } from "react";
 import { Box, styled } from "@mui/material";
 import { DataContext } from "../context/DataProvider";
 
-const Container = styled(Box)`
-  height: 41vh;
-
-`;
+const Container = styled(Box)(({ view }) => ({
+  height: view ? "152vh" : "41vh",
+  flexGrow: view && 1,
+}));
 
 export default function Result() {
   const [src, setSrc] = useState("");
@@ -27,7 +27,7 @@ export default function Result() {
   }, [html, css, js]);
 
   return (
-    <Container style={{flexGrow : view && "1" }}>
+    <Container view={view}>
       <iframe
         srcDoc={src}
         title="output"
